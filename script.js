@@ -97,11 +97,11 @@ function setup() {
     document.addEventListener("pointermove", function (event) {
         updateState({ pointerEvent: event });
     });
-
+/*
      document.addEventListener("pointerdown", function (event) {
          updateState({ clickEvent: event });
      });
-
+*/
     
     
     
