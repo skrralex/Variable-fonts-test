@@ -76,7 +76,7 @@ function loop() {
 
     // And the font slant to the height
     const y = scale(pointerEvent.y, 0, window.innerHeight);
-    const fontMorph = toAbsolute(y, 0, 60); // the `sontStyle` property expects the string "oblique Xdeg" where X is a number betwen 0 and 40
+    const fontMorph = toAbsolute(y, 0, 60);
     textElement.style.fontVariationSettings = `"MORF" ${fontMorph}`;
 
 
