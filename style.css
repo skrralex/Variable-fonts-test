@@ -14,12 +14,18 @@ body {
     margin: 0;
     padding: 0;
     line-height: inherit;
-    background-color: #123543;
+    background-color: hsl(197, 58%, 17%);
     color: #ffd146;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+@keyframes morph {
+    50% {
+      font-variation-settings: "MORF" 60;
+    }
+}    
 
 #text {
     font-family: "Kablammo"; 
@@ -27,4 +33,7 @@ body {
     font-size: 72px;
     transition: all 0.1s ease;
     font-variation-settings: "MORF" 30;
+    animation: morph 10s linear infinite;
+    text-align: center;
 }
+
