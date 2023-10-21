@@ -18,7 +18,7 @@ body {
     align-items: center;
 }
 
-#text {
+.text {
     font-family: "Recursive", sans-serif;
     margin: 10%;
     font-size: 72px;
