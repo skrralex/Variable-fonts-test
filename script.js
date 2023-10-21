@@ -13,7 +13,7 @@ let state = Object.freeze({
 
 
 const settings = Object.freeze({
-    textElement: document.querySelector("#text"),
+    textElement: document.querySelector(".text"),
 });
 
 
