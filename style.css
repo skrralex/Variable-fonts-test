@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap");
-
+@font-face {
+    font-family: "Kablammo";
+    src: url('https://storage.googleapis.com/atoms-sandbox.google.com.a.appspot.com/Kablammo%5BMORF%5D.woff2') format('woff2'),
+         url('https://storage.googleapis.com/atoms-sandbox.google.com.a.appspot.com/Kablammo%5BMORF%5D.ttf') format('truetype');
+  }
 
 /* Prevent padding and border from affecting element width. */
 *, ::before, ::after {
@@ -11,16 +14,17 @@ body {
     margin: 0;
     padding: 0;
     line-height: inherit;
-    background-color: navy;
-    color: orchid;
+    background-color: #123543;
+    color: #ffd146;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.text {
-    font-family: "Recursive", sans-serif;
+#text {
+    font-family: "Kablammo"; 
     margin: 10%;
     font-size: 72px;
     transition: all 0.1s ease;
+    font-variation-settings: "MORF" 30;
 }
