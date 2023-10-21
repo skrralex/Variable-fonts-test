@@ -89,19 +89,18 @@ function loop() {
  */
 function setup() {
 
-    // settings.textElement.style.display = 'flex';          //Turn textElement into a flex container
-    // settings.textElement.style.justifyContent = 'center'; //Center the text horizontally
-    // settings.textElement.style.alignItems = 'center';     //Center the text vertically
-    // settings.textElement.style.height = '65vh';          //Set the height of the container to 100% of the viewport height
-
     document.addEventListener("pointermove", function (event) {
         updateState({ pointerEvent: event });
     });
-/*
-     document.addEventListener("pointerdown", function (event) {
-         updateState({ clickEvent: event });
-     });
-*/
+
+    document.addEventListener("pointermove", function (event) {
+        // Check if the control key was held down when the event was fired.
+        // If not, exit the function and do nothing.
+        if (!event.ctrlKey) {
+            return;
+        }
+        updateState({ clickEvent: event });
+    });
     
     
     
